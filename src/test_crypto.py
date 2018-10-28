@@ -46,4 +46,4 @@ if __name__ == '__main__':
         b'1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736',
         'hex')))
     print(xor_cracker.detect_single_character_xor("data/4.txt"))
-    print(xor_cracker.break_repeating_key_xor(xor_cracker.read_base64_file_to_bytearray('data/6.txt')))
+    print(xor_cracker.crack_repeating_key_xor(crypto_utils.read_base64_file_to_bytearray('data/6.txt')))
